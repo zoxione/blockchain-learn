@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/blockchain-learn/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/blockchain-learn/static/js/main.bb9dd125.chunk.js",
+    "main.js.map": "/blockchain-learn/static/js/main.bb9dd125.chunk.js.map",
+    "runtime-main.js": "/blockchain-learn/static/js/runtime-main.502b2dbf.js",
+    "runtime-main.js.map": "/blockchain-learn/static/js/runtime-main.502b2dbf.js.map",
+    "static/js/2.1936875c.chunk.js": "/blockchain-learn/static/js/2.1936875c.chunk.js",
+    "static/js/2.1936875c.chunk.js.map": "/blockchain-learn/static/js/2.1936875c.chunk.js.map",
+    "static/js/3.fb0017f4.chunk.js": "/blockchain-learn/static/js/3.fb0017f4.chunk.js",
+    "static/js/3.fb0017f4.chunk.js.map": "/blockchain-learn/static/js/3.fb0017f4.chunk.js.map",
+    "index.html": "/blockchain-learn/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/blockchain-learn/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.1936875c.chunk.js.LICENSE.txt": "/blockchain-learn/static/js/2.1936875c.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/blockchain-learn/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.502b2dbf.js",
+    "static/js/2.1936875c.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.bb9dd125.chunk.js"
+  ]
+}
