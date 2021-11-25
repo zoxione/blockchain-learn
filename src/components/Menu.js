@@ -42,12 +42,12 @@ class Menu extends React.Component {
                 </button>
                 { this.props.page !== 0 && 
                     <div className="pagination">
-                        <div className="pagination_item pagination_item_active" />
-                        <div className="pagination_item" />
-                        <div className="pagination_item " />
-                        <div className="pagination_item " />
-                        <div className="pagination_item " />
-                        <div className="pagination_item " />
+                        <div className={"pagination_item " + (this.props.page === 1 ? 'pagination_item_active' : '')} />
+                        <div className={"pagination_item " + (this.props.page === 2 ? 'pagination_item_active' : '')} />
+                        <div className={"pagination_item " + (this.props.page === 3 ? 'pagination_item_active' : '')} />
+                        <div className={"pagination_item " + (this.props.page === 4 ? 'pagination_item_active' : '')} />
+                        <div className={"pagination_item " + (this.props.page === 5 ? 'pagination_item_active' : '')} />
+                        <div className={"pagination_item " + (this.props.page === 6 ? 'pagination_item_active' : '')} />
                     </div>
                 }
                 { this.props.page === 0 && 

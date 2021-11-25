@@ -2,23 +2,26 @@ import React from "react";
 import './App.css';
 
 import Menu from "./components/Menu";
-import First from "./pages/First";
+import Page1 from "./pages/Page1";
+import Page2 from "./pages/Page2";
+import Page3 from "./pages/Page3";
+import Page4 from "./pages/Page4";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.start = this.start.bind(this);
+    this.nextPage = this.nextPage.bind(this);
     this.state = {page: 0, lang: "ru"};
   }
 
-  start() {
+  nextPage(page) {
     //this.setState({page: this.state.page + 1});
     this.setState(function(prevState, props) {
       return {
         page: prevState.page + 1
       };
     });
-    console.log(this.state.page);
+    console.log(page);
   }
 
   render () {
@@ -28,14 +31,32 @@ class App extends React.Component {
           { this.state.page === 0 &&
             <div className="page_zero">
               <h1>Что такое блокчейн?</h1>
-              <p>длительность: 30 мин • CryptoAlliance, декабрь 2021</p> 
-              <button className="button_start" onClick={this.start}>Играть</button>
+              <p>Длительность: 30 мин • CryptoAlliance 2021</p> 
+              <button className="button_start" onClick={this.nextPage}>Играть</button>
             </div>
           }
           { this.state.page === 1 &&
             <div>
-              <First />
-              <button className="button_next">Понятно</button>
+              <Page1 />
+              <button className="button_next" onClick={this.nextPage}>Понятно</button>
+            </div>
+          }
+          { this.state.page === 2 &&
+            <div>
+              <Page2 />
+              <button className="button_next" onClick={this.nextPage}>Понятно</button>
+            </div>
+          }
+          { this.state.page === 3 &&
+            <div>
+              <Page3 />
+              <button className="button_next" onClick={this.nextPage}>Понятно</button>
+            </div>
+          }
+          { this.state.page === 4 &&
+            <div>
+              <Page4 />
+              <button className="button_next" onClick={this.nextPage}>Понятно</button>
             </div>
           }
         </div>

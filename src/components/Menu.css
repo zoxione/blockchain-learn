@@ -16,6 +16,7 @@
     font-size: 15px;
     color: white;
     padding-left: 30px;
+    cursor: pointer;
 }
 
 .sound_icon {
@@ -45,6 +46,7 @@
     flex-direction: row;
     align-items: center;
     padding-right: 30px;
+    cursor: pointer;
 }
 
 .lang_icon {

@@ -1,8 +1,8 @@
-.first {
+.page {
     margin: 30px;
 }
 
-.first img {
+.page img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -10,7 +10,7 @@
 }
 
 @media screen and (min-width: 600px) {
-    .first img {
-      height: 200px;
+    .page img {
+    height: 200px;
     }
-  }
+}
