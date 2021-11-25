@@ -36,7 +36,7 @@ class App extends React.Component {
             <First />
           }
         </div>
-        <Menu />
+        <Menu page={this.state.page} />
       </div>
     )
   };

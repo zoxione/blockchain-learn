@@ -32,7 +32,6 @@ class Menu extends React.Component {
                             <AiFillSound className="sound_icon" />
                             <p>ВКЛ</p>
                         </div>
-                        
                     }
                     { !this.state.sound &&
                         <div className="sound_off">
@@ -41,15 +40,18 @@ class Menu extends React.Component {
                         </div>
                     }
                 </button>
-                <div className="pagination">
-                    <div className="pagination_item pagination_item_active" />
-                    <div className="pagination_item" />
-                    <div className="pagination_item " />
-                    <div className="pagination_item " />
-                    <div className="pagination_item " />
-                    <div className="pagination_item " />
-                </div>
-                <button className="lang_button" onClick={this.switchLanguage}>
+                { this.props.page !== 0 && 
+                    <div className="pagination">
+                        <div className="pagination_item pagination_item_active" />
+                        <div className="pagination_item" />
+                        <div className="pagination_item " />
+                        <div className="pagination_item " />
+                        <div className="pagination_item " />
+                        <div className="pagination_item " />
+                    </div>
+                }
+                { this.props.page === 0 && 
+                    <button className="lang_button" onClick={this.switchLanguage}>
                     <p>ИЗМЕНИТЬ ЯЗЫК</p>
                     { this.state.lang === "ru" && 
                         <img className="lang_icon" alt="ru" src="https://img.icons8.com/fluency/40/000000/russian-federation-circular.png"/>
@@ -60,7 +62,8 @@ class Menu extends React.Component {
                     {
                     //https://icons8.com/license
                     }
-                </button>
+                    </button>
+                }
             </nav>
         )
     };
