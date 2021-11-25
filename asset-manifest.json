@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/blockchain-learn/static/css/main.9f388a38.chunk.css",
-    "main.js": "/blockchain-learn/static/js/main.e5a74ff5.chunk.js",
-    "main.js.map": "/blockchain-learn/static/js/main.e5a74ff5.chunk.js.map",
+    "main.css": "/blockchain-learn/static/css/main.75991006.chunk.css",
+    "main.js": "/blockchain-learn/static/js/main.1a0f9641.chunk.js",
+    "main.js.map": "/blockchain-learn/static/js/main.1a0f9641.chunk.js.map",
     "runtime-main.js": "/blockchain-learn/static/js/runtime-main.403f61f0.js",
     "runtime-main.js.map": "/blockchain-learn/static/js/runtime-main.403f61f0.js.map",
-    "static/js/2.85dc90e7.chunk.js": "/blockchain-learn/static/js/2.85dc90e7.chunk.js",
-    "static/js/2.85dc90e7.chunk.js.map": "/blockchain-learn/static/js/2.85dc90e7.chunk.js.map",
+    "static/js/2.fe19ec18.chunk.js": "/blockchain-learn/static/js/2.fe19ec18.chunk.js",
+    "static/js/2.fe19ec18.chunk.js.map": "/blockchain-learn/static/js/2.fe19ec18.chunk.js.map",
     "static/js/3.cc228a7d.chunk.js": "/blockchain-learn/static/js/3.cc228a7d.chunk.js",
     "static/js/3.cc228a7d.chunk.js.map": "/blockchain-learn/static/js/3.cc228a7d.chunk.js.map",
     "index.html": "/blockchain-learn/index.html",
-    "static/css/main.9f388a38.chunk.css.map": "/blockchain-learn/static/css/main.9f388a38.chunk.css.map",
-    "static/js/2.85dc90e7.chunk.js.LICENSE.txt": "/blockchain-learn/static/js/2.85dc90e7.chunk.js.LICENSE.txt",
+    "static/css/main.75991006.chunk.css.map": "/blockchain-learn/static/css/main.75991006.chunk.css.map",
+    "static/js/2.fe19ec18.chunk.js.LICENSE.txt": "/blockchain-learn/static/js/2.fe19ec18.chunk.js.LICENSE.txt",
     "static/media/blockchain.aa249a9a.jpg": "/blockchain-learn/static/media/blockchain.aa249a9a.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.403f61f0.js",
-    "static/js/2.85dc90e7.chunk.js",
-    "static/css/main.9f388a38.chunk.css",
-    "static/js/main.e5a74ff5.chunk.js"
+    "static/js/2.fe19ec18.chunk.js",
+    "static/css/main.75991006.chunk.css",
+    "static/js/main.1a0f9641.chunk.js"
   ]
 }
