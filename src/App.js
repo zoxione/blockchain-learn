@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css';
 
-
+import Menu from "./components/Menu";
 
 class App extends React.Component {
   constructor(props) {
@@ -27,7 +27,7 @@ class App extends React.Component {
           <h1>Blockchain Learn</h1> 
           <button className="button_start" onClick={this.start}>Играть</button>
         </div>
-        
+        <Menu />
       </div>
     )
   };

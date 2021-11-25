@@ -43,10 +43,10 @@ class Menu extends React.Component {
                     <button className="lang_button" onClick={this.switchLanguage}>
                         <p>ИЗМЕНИТЬ ЯЗЫК https://icons8.com/license</p>
                         { this.state.lang === "ru" && 
-                            <img className="lang_icon" src="https://img.icons8.com/fluency/40/000000/russian-federation-circular.png"/>
+                            <img className="lang_icon" alt="ru" src="https://img.icons8.com/fluency/40/000000/russian-federation-circular.png"/>
                         }
                         { this.state.lang === "eng" && 
-                            <img className="lang_icon" src="https://img.icons8.com/fluency/40/000000/great-britain-circular.png"/>
+                            <img className="lang_icon" alt="eng" src="https://img.icons8.com/fluency/40/000000/great-britain-circular.png"/>
                         }
                     </button>
                 </div>
