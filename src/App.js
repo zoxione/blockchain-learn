@@ -33,7 +33,10 @@ class App extends React.Component {
             </div>
           }
           { this.state.page === 1 &&
-            <First />
+            <div>
+              <First />
+              <button className="button_next">Понятно</button>
+            </div>
           }
         </div>
         <Menu page={this.state.page} />
