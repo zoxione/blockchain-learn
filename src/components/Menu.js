@@ -1,6 +1,8 @@
 import React from "react";
 import './Menu.css';
 
+import { AiFillSound, AiOutlineSound } from 'react-icons/ai';
+
 class Menu extends React.Component {
     constructor(props) {
         super(props);
@@ -28,14 +30,14 @@ class Menu extends React.Component {
                     <button className="sound_button" onClick={this.switchSound}>
                         { this.state.sound &&
                             <div className="sound_on">
-                               
+                                <AiFillSound className="sound_icon" />
                                 <p>ВКЛ</p>
                             </div>
                             
                         }
                         { !this.state.sound &&
                             <div className="sound_off">
-                                
+                                <AiOutlineSound className="sound_icon" />
                                 <p>ВЫКЛ</p>
                             </div>
                         }
