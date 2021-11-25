@@ -1,4 +1,10 @@
-.app {
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+body, p, button {
+  font-family: 'Pangolin', cursive;
+}
+
+.main {
   width: 100vw;
   height: calc(100vh - 60px);
   display: flex;
@@ -8,13 +14,25 @@
   background-color: gainsboro;
 }
 
+.page_zero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .button_start {
   font-size: 30px;
   background-color: tomato;
   color: white;
+  padding: 15px;
   border: 0;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(236, 131, 31, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(236, 131, 31, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(236, 131, 31, 0.2);
 }
 
 .button_start:hover {
-  background-color: rgb(251, 152, 134);
+  background-color: rgb(251, 130, 109);
 }

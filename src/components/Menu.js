@@ -26,32 +26,41 @@ class Menu extends React.Component {
     render() {
         return (
             <nav className="menu">
-                <div className="menu_content">
-                    <button className="sound_button" onClick={this.switchSound}>
-                        { this.state.sound &&
-                            <div className="sound_on">
-                                <AiFillSound className="sound_icon" />
-                                <p>ВКЛ</p>
-                            </div>
-                            
-                        }
-                        { !this.state.sound &&
-                            <div className="sound_off">
-                                <AiOutlineSound className="sound_icon" />
-                                <p>ВЫКЛ</p>
-                            </div>
-                        }
-                    </button>
-                    <button className="lang_button" onClick={this.switchLanguage}>
-                        <p>ИЗМЕНИТЬ ЯЗЫК https://icons8.com/license</p>
-                        { this.state.lang === "ru" && 
-                            <img className="lang_icon" alt="ru" src="https://img.icons8.com/fluency/40/000000/russian-federation-circular.png"/>
-                        }
-                        { this.state.lang === "eng" && 
-                            <img className="lang_icon" alt="eng" src="https://img.icons8.com/fluency/40/000000/great-britain-circular.png"/>
-                        }
-                    </button>
+                <button className="sound_button" onClick={this.switchSound}>
+                    { this.state.sound &&
+                        <div className="sound_on">
+                            <AiFillSound className="sound_icon" />
+                            <p>ВКЛ</p>
+                        </div>
+                        
+                    }
+                    { !this.state.sound &&
+                        <div className="sound_off">
+                            <AiOutlineSound className="sound_icon" />
+                            <p>ВЫКЛ</p>
+                        </div>
+                    }
+                </button>
+                <div className="pagination">
+                    <div className="pagination_item pagination_item_active" />
+                    <div className="pagination_item" />
+                    <div className="pagination_item " />
+                    <div className="pagination_item " />
+                    <div className="pagination_item " />
+                    <div className="pagination_item " />
                 </div>
+                <button className="lang_button" onClick={this.switchLanguage}>
+                    <p>ИЗМЕНИТЬ ЯЗЫК</p>
+                    { this.state.lang === "ru" && 
+                        <img className="lang_icon" alt="ru" src="https://img.icons8.com/fluency/40/000000/russian-federation-circular.png"/>
+                    }
+                    { this.state.lang === "eng" && 
+                        <img className="lang_icon" alt="eng" src="https://img.icons8.com/fluency/40/000000/great-britain-circular.png"/>
+                    }
+                    {
+                    //https://icons8.com/license
+                    }
+                </button>
             </nav>
         )
     };
