@@ -52,27 +52,3 @@
 .lang_icon {
     margin-left: 10px;
 }
-
-.pagination {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-right: 30px;
-}
-
-.pagination_item {
-    height: 30px;
-    width: 30px;
-    border-radius: 100%;
-    background-color: #222;
-    margin-right: 3px;
-    margin-left: 3px;
-    cursor: pointer;
-    border: 1px solid whitesmoke;
-}
-.pagination_item_active {
-    background-color: whitesmoke;
-}
-.pagination_item:hover {
-    background-color: whitesmoke;
-}

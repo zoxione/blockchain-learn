@@ -7,11 +7,20 @@ import Page2 from "./pages/Page2";
 import Page3 from "./pages/Page3";
 import Page4 from "./pages/Page4";
 
+import { PageContext } from "./components/page-context";
+
 class App extends React.Component {
   constructor(props) {
     super(props);
+
+    this.togglePage = (_page) => {
+      this.setState(state => ({
+        page: _page
+      }));
+    };
+
     this.nextPage = this.nextPage.bind(this);
-    this.state = {page: 0, lang: "ru"};
+    this.state = {page: 0, togglePage: this.togglePage, lang: "ru"};
   }
 
   nextPage(page) {
@@ -26,42 +35,44 @@ class App extends React.Component {
 
   render () {
     return(
-      <div className="app">
-        <div className="main">
-          { this.state.page === 0 &&
-            <div className="page_zero">
-              <h1>Что такое блокчейн?</h1>
-              <p>Длительность: 30 мин • CryptoAlliance 2021</p> 
-              <button className="button_start" onClick={this.nextPage}>Играть</button>
-            </div>
-          }
-          { this.state.page === 1 &&
-            <div>
-              <Page1 />
-              <button className="button_next" onClick={this.nextPage}>Понятно</button>
-            </div>
-          }
-          { this.state.page === 2 &&
-            <div>
-              <Page2 />
-              <button className="button_next" onClick={this.nextPage}>Понятно</button>
-            </div>
-          }
-          { this.state.page === 3 &&
-            <div>
-              <Page3 />
-              <button className="button_next" onClick={this.nextPage}>Понятно</button>
-            </div>
-          }
-          { this.state.page === 4 &&
-            <div>
-              <Page4 />
-              <button className="button_next" onClick={this.nextPage}>Понятно</button>
-            </div>
-          }
+      <PageContext.Provider value={this.state}>
+        <div className="app">
+          <div className="main">
+            { this.state.page === 0 &&
+              <div className="page_zero">
+                <h1>Что такое блокчейн?</h1>
+                <p>Длительность: 30 мин • CryptoAlliance 2021</p> 
+                <button className="button_start" onClick={this.nextPage}>Играть</button>
+              </div>
+            }
+            { this.state.page === 1 &&
+              <div>
+                <Page1 />
+                <button className="button_next" onClick={this.nextPage}>Понятно</button>
+              </div>
+            }
+            { this.state.page === 2 &&
+              <div>
+                <Page2 />
+                <button className="button_next" onClick={this.nextPage}>Понятно</button>
+              </div>
+            }
+            { this.state.page === 3 &&
+              <div>
+                <Page3 />
+                <button className="button_next" onClick={this.nextPage}>Понятно</button>
+              </div>
+            }
+            { this.state.page === 4 &&
+              <div>
+                <Page4 />
+                <button className="button_next" onClick={this.nextPage}>Понятно</button>
+              </div>
+            }
+          </div>
+          <Menu page={this.state.page} />
         </div>
-        <Menu page={this.state.page} />
-      </div>
+      </PageContext.Provider>
     )
   };
 }
