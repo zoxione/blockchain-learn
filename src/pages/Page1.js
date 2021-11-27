@@ -16,7 +16,7 @@ function Page1() {
         <Page>
             { language === "rus" &&
                 <>
-                    <h1>Блокчейн - это...</h1>
+                    <h2>Блокчейн - это...</h2>
                     <p>Блокчейн – это распределенная база данных. Представляет собой цепочку записей (блоков), которые нельзя поменять.</p>
                     <img src={process.env.PUBLIC_URL + '/img/blockchain.jpg'} alt="blockchain" />
                     <button className="button_next" onClick={() => nextPage()}>Понятно</button>
@@ -24,7 +24,7 @@ function Page1() {
             }
             { language === "eng" &&
                 <>
-                    <h1>Blockchain is...</h1>
+                    <h2>Blockchain is...</h2>
                     <p>Blockchain is a distributed database. It is a chain of records (blocks) that cannot be changed.</p>
                     <img src={process.env.PUBLIC_URL + '/img/blockchain.jpg'} alt="blockchain" />
                     <button className="button_next" onClick={() => nextPage()}>Clearly</button>

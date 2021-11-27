@@ -2,30 +2,20 @@
     margin: 30px;
 }
 
-@media screen and (min-width: 500px) {
-    .page {
-        margin: 100px;
-    }
+.title {
+    margin-bottom: 50px;
+    font-size: 32px;
+    color: #393E46;
 }
 
-@media screen and (min-width: 1000px) {
-    .page {
-        margin: 200px;
-    }
-}
-
-@media screen and (min-width: 1500px) {
-    .page {
-        margin: 400px;
-    }
-}
-
-.page h1 {
-    margin-bottom: 20px;
-    color: rgb(255, 128, 9);
+.page h2 {
+    margin-bottom: 10px;
+    font-size: 26px;
+    color: #393E46;
 }
 
 .page p {
+    font-size: 18px;
     margin-top: 10px;
     margin-bottom: 10px;
     color: #000000;
@@ -35,63 +25,22 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 100px;
+    height: 130px;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-@media screen and (min-width: 600px) {
-    .page img {
-        height: 200px;
-    }
-}
-
-.button_start {
-    background-color: #fbeee0;
-    border: 2px solid #422800;
-    border-radius: 30px;
-    box-shadow: #422800 4px 4px 0 0;
-    color: #422800;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 0 18px;
-    line-height: 50px;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.button_start:hover {
-    background-color: rgb(251, 130, 109);
-}
-
-.button_start:active {
-    box-shadow: #422800 2px 2px 0 0;
-    transform: translate(2px, 2px);
-}
-
-@media (min-width: 768px) {
-    .button_start {
-        min-width: 120px;
-        padding: 0 25px;
-    }
+    border-radius: 8px;
+    border: 2px solid #393E46;
 }
 
 .button_next {
-    background-color: #fbeee0;
-    border: 2px solid #422800;
+    background-color: #EEEEEE;
+    border: 2px solid #393E46;
     border-radius: 30px;
-
-    color: #422800;
+    box-shadow: #393E46 4px 4px 0 0;
+    color: #393E46;
     cursor: pointer;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
     padding: 0 18px;
     line-height: 50px;
     text-align: center;
@@ -105,14 +54,20 @@
 }
 
 .button_next:hover {
-    background-color: rgb(251, 130, 109);
+    background-color: #00ADB5;
+    color:white;
 }
 
+.button_next:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
 
 .tripleBlock {
     display: flex;
     flex-direction: column;
-    margin-right: 30px;
+    margin-right: 8px;
+    border: 2px solid #222831;
 }
 
 .tripleBlock_1{
@@ -131,4 +86,51 @@
     height: 35px;
     width: 105px;
     background-color: rgb(109, 170, 251);
+}
+
+@media screen and (min-width: 640px) {
+    .page {
+        margin: 100px;
+    }
+    .title {
+        font-size: 50px;
+    }
+    .page h2 {
+        font-size: 30px;
+    }
+    .page p {
+        font-size: 20px;
+    }
+    .button_next {
+        font-size: 22px;
+    }
+    .page img {
+        height: 200px;
+    }
+    .tripleBlock {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .button_next {
+        min-width: 120px;
+        padding: 0 25px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .page {
+        margin: 200px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+}
+
+@media screen and (min-width: 1536px) {
+    .page {
+        margin: 400px;
+    }
 }

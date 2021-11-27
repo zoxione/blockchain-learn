@@ -49,18 +49,26 @@ function Menu() {
             </button>
             {page !== 0 &&
                 <div className="pagination">
-                    <button onClick={() => setPage(1)}>
-                        <div className={"pagination_item " + (page === 1 ? 'pagination_item_active' : '')} />
-                    </button>
-                    <button onClick={() => setPage(2)}>
-                        <div className={"pagination_item " + (page === 2 ? 'pagination_item_active' : '')} />
-                    </button>
-                    <button onClick={() => setPage(3)}>
-                        <div className={"pagination_item " + (page === 3 ? 'pagination_item_active' : '')} />
-                    </button>
-                    <button onClick={() => setPage(4)}>
-                        <div className={"pagination_item " + (page === 4 ? 'pagination_item_active' : '')} />
-                    </button>
+                    <button 
+                        data-title = "0. Начало" 
+                        className = {"pagination_item " + (page === 1 ? 'pagination_item_active' : '')} 
+                        onClick={() => setPage(1)}
+                    />
+                    <button
+                        data-title = "0. Начало" 
+                        className={"pagination_item " + (page === 2 ? 'pagination_item_active' : '')}
+                        onClick={() => setPage(2)}
+                    />
+                    <button
+                        data-title = "0. Начало" 
+                        className={"pagination_item " + (page === 3 ? 'pagination_item_active' : '')}
+                        onClick={() => setPage(3)}
+                    />
+                    <button
+                        data-title = "0. Начало" 
+                        className={"pagination_item " + (page === 4 ? 'pagination_item_active' : '')}
+                        onClick={() => setPage(4)}
+                    />
                 </div>
             }
             {page === 0 &&

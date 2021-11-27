@@ -15,16 +15,16 @@ function Page0() {
         <Page>
             { language === "rus" &&
                 <>
-                    <h1>Что такое блокчейн?</h1>
+                    <h1 className="title">Что такое блокчейн?</h1>
                     <p>Длительность: 30 мин • CryptoAlliance 2021</p>
-                    <button className="button_start" onClick={() => nextPage()}>Начать</button>
+                    <button className="button_next" onClick={() => nextPage()}>Начать</button>
                 </>
             }
             { language === "eng" &&
                 <>
-                    <h1>What is blockchain?</h1>
+                    <h1 className="title">What is blockchain?</h1>
                     <p>Duration: 30 min • CryptoAlliance 2021</p>
-                    <button className="button_start" onClick={() => nextPage()}>Start</button>
+                    <button className="button_next" onClick={() => nextPage()}>Start</button>
                 </>
             }
         </Page>

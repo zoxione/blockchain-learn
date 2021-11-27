@@ -13,7 +13,7 @@ function Page2() {
 
     return (
         <Page>
-            <h1>Один блок содержит:</h1>
+            <h2>Один блок содержит:</h2>
             <div style={{display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center"}}>
                 <div className="tripleBlock">
                     <div className="tripleBlock_1" />
