@@ -2,8 +2,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { AiFillSound, AiOutlineSound } from 'react-icons/ai';
 import useSound from 'use-sound';
 
-import soundData from './background.mp3';
-
 import './Menu.css';
 
 function Menu() {
@@ -12,7 +10,8 @@ function Menu() {
     const language = useSelector(state => state.language);
     const isSound = useSelector(state => state.sound);
 
-    const [play, { pause }] = useSound(soundData, { loop: true, volume: 0.25 });
+    const soundUrl = process.env.PUBLIC_URL + '/sound/background.mp3';
+    const [play, { pause }] = useSound(soundUrl, { loop: true, volume: 0.25 });
     
     const setPage = (_page) => {
         dispatch({type: "SET_PAGE", payload: _page});
