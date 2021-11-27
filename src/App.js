@@ -2,6 +2,7 @@ import React from "react";
 import './App.css';
 
 import Menu from "./components/Menu";
+import Page0 from "./pages/Page0";
 import Page1 from "./pages/Page1";
 import Page2 from "./pages/Page2";
 import Page3 from "./pages/Page3";
@@ -44,41 +45,25 @@ class App extends React.Component {
   render() {
     return (
       <GlobalStateContext.Provider value={this.state}>
-        <div className="app">
+        <div>
           <div className="main">
             {this.state.page === 0 &&
-              <div className="page_zero">
-                <h1>Что такое блокчейн?</h1>
-                <p>Длительность: 30 мин • CryptoAlliance 2021</p>
-                <button className="button_start" onClick={this.setPage.bind(this, this.state.page + 1)}>Играть</button>
-              </div>
+              <Page0 />
             }
             {this.state.page === 1 &&
-              <div>
-                <Page1 />
-                <button className="button_next" onClick={this.setPage.bind(this, this.state.page + 1)}>Понятно</button>
-              </div>
+              <Page1 />
             }
             {this.state.page === 2 &&
-              <div>
-                <Page2 />
-                <button className="button_next" onClick={this.setPage.bind(this, this.state.page + 1)}>Понятно</button>
-              </div>
+              <Page2 />
             }
             {this.state.page === 3 &&
-              <div>
-                <Page3 />
-                <button className="button_next" onClick={this.setPage.bind(this, this.state.page + 1)}>Понятно</button>
-              </div>
+              <Page3 />
             }
             {this.state.page === 4 &&
-              <div>
-                <Page4 />
-                <button className="button_next" onClick={this.setPage.bind(this, this.state.page + 1)}>Понятно</button>
-              </div>
+              <Page4 />
             }
           </div>
-          <Menu page={this.state.page} />
+          <Menu />
         </div>
       </GlobalStateContext.Provider>
     )

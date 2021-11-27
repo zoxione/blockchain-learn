@@ -2,6 +2,11 @@
 
 body, p, button {
   font-family: 'Pangolin', cursive;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .main {
@@ -12,46 +17,4 @@ body, p, button {
   align-items: center;
   justify-content: center;
   background-color: gainsboro;
-}
-
-.page_zero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 30px;
-}
-
-.button_start {
-  font-size: 30px;
-  background-color: tomato;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border: 0;
-  border-radius: 30px;
-  -webkit-box-shadow: 0px 5px 10px 2px rgba(236, 131, 31, 0.2);
-  -moz-box-shadow: 0px 5px 10px 2px rgba(236, 131, 31, 0.2);
-  box-shadow: 0px 5px 10px 2px rgba(236, 131, 31, 0.2);
-}
-
-.button_start:hover {
-  background-color: rgb(251, 130, 109);
-}
-
-.button_next {
-  font-size: 30px;
-  background-color: tomato;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border: 0;
-  border-radius: 30px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.button_next:hover {
-  background-color: rgb(251, 130, 109);
 }
