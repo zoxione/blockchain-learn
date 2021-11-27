@@ -1,5 +1,8 @@
 import { useDispatch, useSelector } from "react-redux";
 import { AiFillSound, AiOutlineSound } from 'react-icons/ai';
+import useSound from 'use-sound';
+
+import soundData from './background.mp3';
 
 import './Menu.css';
 
@@ -7,7 +10,9 @@ function Menu() {
     const dispatch = useDispatch();
     const page = useSelector(state => state.page);
     const language = useSelector(state => state.language);
-    const sound = useSelector(state => state.sound);
+    const isSound = useSelector(state => state.sound);
+
+    const [play, { pause }] = useSound(soundData, { loop: true, volume: 0.25 });
     
     const setPage = (_page) => {
         dispatch({type: "SET_PAGE", payload: _page});
@@ -19,18 +24,24 @@ function Menu() {
 
     const toggleSound = () => {
         dispatch({type: "TOGGLE_SOUND"});
+        if (!isSound) {
+            play();
+        }
+        else {
+            pause();
+        }     
     }
 
     return (
         <nav className="menu">
             <button className="sound_button" onClick={() => toggleSound()}>
-                {sound === true &&
+                {isSound === true &&
                     <div className="sound_on">
                         <AiFillSound className="sound_icon" />
                         <p>ВКЛ</p>
                     </div>
                 }
-                {sound === false &&
+                {isSound === false &&
                     <div className="sound_off">
                         <AiOutlineSound className="sound_icon" />
                         <p>ВЫКЛ</p>

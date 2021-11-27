@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
-
 import './App.css';
+
 import Menu from "./components/Menu";
 import Page0 from "./pages/Page0";
 import Page1 from "./pages/Page1";
@@ -10,9 +10,9 @@ import Page3 from "./pages/Page3";
 import Page4 from "./pages/Page4";
 
 function App() {
-    const page = useSelector(state => state.page);
+  const page = useSelector(state => state.page);
 
-    return (
+  return (
     <div className="app">
         <div className="main">
             {page === 0 &&
@@ -33,7 +33,7 @@ function App() {
         </div>
         <Menu />
     </div>
-    )
+  )
 }
 
 export default App;

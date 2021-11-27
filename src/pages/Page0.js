@@ -5,6 +5,7 @@ import Page from "../components/Page";
 function Page0() {
     const dispatch = useDispatch();
     const page = useSelector(state => state.page);
+    const language = useSelector(state => state.language);
     
     const nextPage = (_page) => {
         dispatch({type: "SET_PAGE", payload: page + 1})
@@ -12,10 +13,23 @@ function Page0() {
 
     return (
         <Page>
-            <h1>Что такое блокчейн?</h1>
-            <p>Длительность: 30 мин • CryptoAlliance 2021</p>
-            <button className="button_start" onClick={() => nextPage()}>Играть</button>
+            { language === "rus" &&
+                <>
+                    <h1>Что такое блокчейн?</h1>
+                    <p>Длительность: 30 мин • CryptoAlliance 2021</p>
+                    <button className="button_start" onClick={() => nextPage()}>Начать</button>
+                </>
+            }
+            { language === "eng" &&
+                <>
+                    <h1>What is blockchain?</h1>
+                    <p>Duration: 30 min • CryptoAlliance 2021</p>
+                    <button className="button_start" onClick={() => nextPage()}>Start</button>
+                </>
+            }
         </Page>
+        
+        
     )
 }
 

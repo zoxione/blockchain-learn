@@ -8,7 +8,7 @@ import App from './App';
 const defaultState = {
     page: 0,
     language: "rus",
-    sound: true,
+    sound: false,
 }
 
 const reducer = (state = defaultState, action) => {
