@@ -1,16 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createStore } from "redux";
+import { Provider } from 'react-redux';
+
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+const defaultState = {
+  page: 0,
+  language: "rus",
+  sound: true,
+}
+
+const reducer = (state = defaultState, action) => {
+  switch (action.type) {
+    case "SET_PAGE":
+      return {...state, page: action.payload}
+    case "TOGGLE_LANGUAGE":
+      return {...state, language: state.language === "rus" ? "eng" : "rus"}
+    case "TOGGLE_SOUND":
+      return {...state, sound: state.sound === true ? false : true}
+    default:
+      return state;
+  }
+}
+
+const store = createStore(reducer);
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

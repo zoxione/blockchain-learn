@@ -1,21 +1,22 @@
-import React from "react";
-import Page from "../components/Page";
-import GlobalStateContext from '../components/global-state-context';
+import { useDispatch, useSelector } from "react-redux";
 
-class Page0 extends React.Component {
-    render() {
-        return (
-            <GlobalStateContext.Consumer>
-                {({ page, setPage }) => (
-                    <Page>
-                        <h1>Что такое блокчейн?</h1>
-                        <p>Длительность: 30 мин • CryptoAlliance 2021</p>
-                        <button className="button_start" onClick={setPage.bind(this, 1)}>Играть</button>
-                    </Page>
-                )}
-            </GlobalStateContext.Consumer>
-        )
-    };
+import Page from "../components/Page";
+
+function Page0() {
+    const dispatch = useDispatch();
+    const page = useSelector(state => state.page);
+    
+    const nextPage = (_page) => {
+        dispatch({type: "SET_PAGE", payload: page + 1})
+    }
+
+    return (
+        <Page>
+            <h1>Что такое блокчейн?</h1>
+            <p>Длительность: 30 мин • CryptoAlliance 2021</p>
+            <button className="button_start" onClick={() => nextPage()}>Играть</button>
+        </Page>
+    )
 }
 
 export default Page0;

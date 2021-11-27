@@ -1,22 +1,25 @@
 import React from "react";
-import Page from "../components/Page";
-import GlobalStateContext from '../components/global-state-context';
+import { useDispatch, useSelector } from "react-redux";
 
-class Page3 extends React.Component {
-    render() {
-        return (
-            <GlobalStateContext.Consumer>
-                {({ page, setPage }) => (
-                    <Page>
-                        <h1>Безопасность блокчейна</h1>
-                        <p>Если злоумышленик сможет подделать хэш одного блока, то все последующие блоки будут недействительными. Так злоумышленик может подделать все остальные блоки в сети, но чтобы избежать этого в блокчейне используется механизм Proof of Work, который замедляет создание новых блоков.</p>
-                        <p>Помимо этого, блокчейн - это децентрализованная сеть, поэтому каждый участник сети проверяет валидность нового блока. Если более 50% участников согласны с тем, что новый блок не является подделаным, то он добавляется в сеть.</p>
-                        <button className="button_next" onClick={setPage.bind(this, 4)}>Понятно</button>
-                    </Page>
-                )}
-            </GlobalStateContext.Consumer>
-        )
-    };
+import Page from "../components/Page";
+
+function Page3() {
+    const dispatch = useDispatch();
+    const page = useSelector(state => state.page);
+    
+    const nextPage = (_page) => {
+        dispatch({type: "SET_PAGE", payload: page + 1})
+    }
+
+    return (
+        <Page>
+            <h1>Безопасность блокчейна</h1>
+            <p>Если злоумышленик сможет подделать хэш одного блока, то все последующие блоки будут недействительными. Так злоумышленик может подделать все остальные блоки в сети, но чтобы избежать этого в блокчейне используется механизм Proof of Work, который замедляет создание новых блоков.</p>
+            <p>Помимо этого, блокчейн - это децентрализованная сеть, поэтому каждый участник сети проверяет валидность нового блока. Если более 50% участников согласны с тем, что новый блок не является подделаным, то он добавляется в сеть.</p>
+            <button className="button_next" onClick={() => nextPage()}>Понятно</button>
+        </Page>
+    )
+
 }
 
 export default Page3;
