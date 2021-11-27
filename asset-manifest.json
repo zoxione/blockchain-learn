@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/blockchain-learn/static/css/main.17361498.chunk.css",
-    "main.js": "/blockchain-learn/static/js/main.ff8e92f4.chunk.js",
-    "main.js.map": "/blockchain-learn/static/js/main.ff8e92f4.chunk.js.map",
+    "main.js": "/blockchain-learn/static/js/main.326384cc.chunk.js",
+    "main.js.map": "/blockchain-learn/static/js/main.326384cc.chunk.js.map",
     "runtime-main.js": "/blockchain-learn/static/js/runtime-main.0bcb42bf.js",
     "runtime-main.js.map": "/blockchain-learn/static/js/runtime-main.0bcb42bf.js.map",
     "static/js/2.d654ee3b.chunk.js": "/blockchain-learn/static/js/2.d654ee3b.chunk.js",
@@ -12,14 +12,12 @@
     "index.html": "/blockchain-learn/index.html",
     "static/css/main.17361498.chunk.css.map": "/blockchain-learn/static/css/main.17361498.chunk.css.map",
     "static/js/2.d654ee3b.chunk.js.LICENSE.txt": "/blockchain-learn/static/js/2.d654ee3b.chunk.js.LICENSE.txt",
-    "static/js/3.1fb2522d.chunk.js.LICENSE.txt": "/blockchain-learn/static/js/3.1fb2522d.chunk.js.LICENSE.txt",
-    "static/media/background.ba787fde.mp3": "/blockchain-learn/static/media/background.ba787fde.mp3",
-    "static/media/blockchain.aa249a9a.jpg": "/blockchain-learn/static/media/blockchain.aa249a9a.jpg"
+    "static/js/3.1fb2522d.chunk.js.LICENSE.txt": "/blockchain-learn/static/js/3.1fb2522d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0bcb42bf.js",
     "static/js/2.d654ee3b.chunk.js",
     "static/css/main.17361498.chunk.css",
-    "static/js/main.ff8e92f4.chunk.js"
+    "static/js/main.326384cc.chunk.js"
   ]
 }
