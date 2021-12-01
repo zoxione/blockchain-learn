@@ -1,0 +1,43 @@
+.button_next {
+    background-color: #EEEEEE;
+    border: 2px solid #393E46;
+    border-radius: 30px;
+    box-shadow: #393E46 4px 4px 0 0;
+    color: #393E46;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button_next:hover {
+    background-color: #00ADB5;
+    color:white;
+}
+
+.button_next:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+@media screen and (min-width: 640px) {
+    .button_next {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .button_next {
+        min-width: 120px;
+        padding: 0 25px;
+    }
+}
