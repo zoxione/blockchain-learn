@@ -8,7 +8,7 @@ function ButtonNextPage(props) {
     const page = useSelector(state => state.page);
 
     const soundUrl = process.env.PUBLIC_URL + '/sound/click.mp3';
-    const [play] = useSound(soundUrl, { volume: 0.25 });
+    const [play] = useSound(soundUrl, { volume: 0.5 });
     
     const nextPage = (_page) => {
         dispatch({type: "SET_PAGE", payload: page + 1});
