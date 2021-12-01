@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/blockchain-learn/static/css/main.1a4ed227.chunk.css",
-    "main.js": "/blockchain-learn/static/js/main.49c6be68.chunk.js",
-    "main.js.map": "/blockchain-learn/static/js/main.49c6be68.chunk.js.map",
-    "runtime-main.js": "/blockchain-learn/static/js/runtime-main.0bcb42bf.js",
-    "runtime-main.js.map": "/blockchain-learn/static/js/runtime-main.0bcb42bf.js.map",
-    "static/js/2.d654ee3b.chunk.js": "/blockchain-learn/static/js/2.d654ee3b.chunk.js",
-    "static/js/2.d654ee3b.chunk.js.map": "/blockchain-learn/static/js/2.d654ee3b.chunk.js.map",
-    "static/js/3.1fb2522d.chunk.js": "/blockchain-learn/static/js/3.1fb2522d.chunk.js",
-    "static/js/3.1fb2522d.chunk.js.map": "/blockchain-learn/static/js/3.1fb2522d.chunk.js.map",
+    "main.css": "/blockchain-learn/static/css/main.e321e8c4.chunk.css",
+    "main.js": "/blockchain-learn/static/js/main.c37bb70d.chunk.js",
+    "main.js.map": "/blockchain-learn/static/js/main.c37bb70d.chunk.js.map",
+    "runtime-main.js": "/blockchain-learn/static/js/runtime-main.77413c11.js",
+    "runtime-main.js.map": "/blockchain-learn/static/js/runtime-main.77413c11.js.map",
+    "static/js/2.3a556151.chunk.js": "/blockchain-learn/static/js/2.3a556151.chunk.js",
+    "static/js/2.3a556151.chunk.js.map": "/blockchain-learn/static/js/2.3a556151.chunk.js.map",
+    "static/js/3.db10f068.chunk.js": "/blockchain-learn/static/js/3.db10f068.chunk.js",
+    "static/js/3.db10f068.chunk.js.map": "/blockchain-learn/static/js/3.db10f068.chunk.js.map",
     "index.html": "/blockchain-learn/index.html",
-    "static/css/main.1a4ed227.chunk.css.map": "/blockchain-learn/static/css/main.1a4ed227.chunk.css.map",
-    "static/js/2.d654ee3b.chunk.js.LICENSE.txt": "/blockchain-learn/static/js/2.d654ee3b.chunk.js.LICENSE.txt",
-    "static/js/3.1fb2522d.chunk.js.LICENSE.txt": "/blockchain-learn/static/js/3.1fb2522d.chunk.js.LICENSE.txt"
+    "static/css/main.e321e8c4.chunk.css.map": "/blockchain-learn/static/css/main.e321e8c4.chunk.css.map",
+    "static/js/2.3a556151.chunk.js.LICENSE.txt": "/blockchain-learn/static/js/2.3a556151.chunk.js.LICENSE.txt",
+    "static/js/3.db10f068.chunk.js.LICENSE.txt": "/blockchain-learn/static/js/3.db10f068.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0bcb42bf.js",
-    "static/js/2.d654ee3b.chunk.js",
-    "static/css/main.1a4ed227.chunk.css",
-    "static/js/main.49c6be68.chunk.js"
+    "static/js/runtime-main.77413c11.js",
+    "static/js/2.3a556151.chunk.js",
+    "static/css/main.e321e8c4.chunk.css",
+    "static/js/main.c37bb70d.chunk.js"
   ]
 }
