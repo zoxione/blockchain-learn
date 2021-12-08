@@ -1,8 +1,8 @@
-import './Page.css';
+import styles from './styles.module.css';
 
 function Page(props) {
     return (
-        <div className="page">
+        <div className={styles.page}>
             {props.children}
         </div>
     )

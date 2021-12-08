@@ -1,0 +1,51 @@
+.page {
+    margin: 30px;
+}
+
+.page h2 {
+    margin-bottom: 10px;
+    font-size: 26px;
+    color: #393E46;
+}
+
+.page p {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+@media screen and (min-width: 640px) {
+    .page {
+        margin: 100px;
+    }
+    .page h2 {
+        font-size: 30px;
+    }
+    .page p {
+        font-size: 20px;
+    }
+    .page img {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .page {
+        margin: 200px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+}
+
+@media screen and (min-width: 1536px) {
+    .page {
+        margin: 400px;
+    }
+}

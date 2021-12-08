@@ -1,0 +1,13 @@
+.blockchain {
+    position: relative; 
+    margin: 0px auto; 
+    height: 200px; 
+    width: 700px;
+}
+
+@media screen and (max-width: 768px) {
+    .blockchain {
+        height: 100px; 
+        width: 300px;
+    }
+}

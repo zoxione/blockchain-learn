@@ -1,0 +1,41 @@
+.main {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.blockchain {
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+
+.block {
+    fill: rgb(92, 2, 211);
+}
+
+.tripleBlock {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8px;
+    border: 2px solid #222831;
+}
+
+.tripleBlock_1{
+    height: 35px;
+    width: 105px;
+    background-color: rgb(251, 130, 109);
+}
+
+.tripleBlock_2{
+    height: 35px;
+    width: 105px;
+    background-color: rgb(109, 251, 152);
+}
+
+.tripleBlock_3{
+    height: 35px;
+    width: 105px;
+    background-color: rgb(109, 170, 251);
+}

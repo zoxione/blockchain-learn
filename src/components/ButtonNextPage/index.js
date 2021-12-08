@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import useSound from 'use-sound';
 
-import './ButtonNextPage.css';
+import styles from './styles.module.css';
 
 function ButtonNextPage(props) {
     const dispatch = useDispatch();
@@ -16,7 +16,7 @@ function ButtonNextPage(props) {
     }
 
     return (
-        <button className="button_next" onClick={() => nextPage()}>{props.children}</button>
+        <button className={styles.button_next} onClick={() => nextPage()}>{props.children}</button>
     )
 }
 

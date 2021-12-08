@@ -1,20 +1,20 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import './App.css';
 
-import Menu from "./components/Menu";
-import Page0 from "./pages/Page0";
-import Page1 from "./pages/Page1";
-import Page2 from "./pages/Page2";
-import Page3 from "./pages/Page3";
-import Page4 from "./pages/Page4";
+import styles from './App.module.css';
+import Menu from "./components/Menu/index";
+import Page0 from "./pages/Page0/index";
+import Page1 from "./pages/Page1/index";
+import Page2 from "./pages/Page2/index";
+import Page3 from "./pages/Page3/index";
+import Page4 from "./pages/Page4/index";
 
 function App() {
   const page = useSelector(state => state.page);
 
   return (
-    <div className="app">
-        <div className="main">
+    <div>
+        <div className={styles.main}>
             {page === 0 &&
                 <Page0 />
             }

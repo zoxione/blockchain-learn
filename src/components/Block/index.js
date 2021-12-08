@@ -1,8 +1,8 @@
-import './Block.css';
+import styles from './styles.module.css';
 
 function Block(props) {
     return (
-        <div className="block">
+        <div className={styles.block}>
             {props.children}
         </div>
     )
