@@ -52,6 +52,7 @@ function Page1() {
                     )}
                 />
             </div>
+            <p>{text.description[1]}</p>
             <ButtonNextPage>{text.button}</ButtonNextPage>
         </Page>
     )

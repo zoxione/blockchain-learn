@@ -32,7 +32,7 @@ function Page2() {
                         readonly={true}
                         direction="RIGHT"
                         nodes={[
-                            { id: '1', text: 'Block', className: styles.block},
+                            { id: '1', text: 'Block', width: 90, height: 90, className: styles.block},
                         ]}
                         
                     />
