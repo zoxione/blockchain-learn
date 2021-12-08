@@ -34,7 +34,6 @@ function Page2() {
                         nodes={[
                             { id: '1', text: 'Block', width: 90, height: 90, className: styles.block},
                         ]}
-                        
                     />
                 </div>
                 <div>
