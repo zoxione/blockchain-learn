@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { Canvas } from 'reaflow';
+import { Canvas, Node } from 'reaflow';
 
 import Page from "../../components/Page/index";
 import ButtonNextPage from "../../components/ButtonNextPage/index";
@@ -32,8 +32,16 @@ function Page2() {
                         readonly={true}
                         direction="RIGHT"
                         nodes={[
-                            { id: '1', text: 'Block', width: 90, height: 90, className: styles.block},
+                            { id: '1', text: 'Block', width: 90, height: 90 }
                         ]}
+                        node={(node: NodeProps) => (
+                            <Node
+                                {...node}
+                                style={{ 
+                                    fill: '#5c02d3' 
+                                }}
+                            />
+                        )}
                     />
                 </div>
                 <div>

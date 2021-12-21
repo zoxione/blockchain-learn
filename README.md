@@ -6,5 +6,5 @@ CryptoAlliance 2021
 
 Check this:
 
-### `https://zoxione.github.io/blockchain-learn/`
+### `https://zoxione.github.io/blockchain-learn`
 

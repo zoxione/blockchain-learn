@@ -39,7 +39,7 @@ function Page1() {
                         { id: '3', text: 'Block 3', width: width/16 }
                     ]}
                     edges={[
-                        { id: '1-2', from: '1', to: '2' },
+                        { id: '1-2', from: '1', to: '2', className: styles.AAA },
                         { id: '2-3', from: '2', to: '3' }
                     ]}
                     node={(node: NodeProps) => (

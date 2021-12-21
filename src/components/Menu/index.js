@@ -75,6 +75,11 @@ function Menu() {
                         className={styles.pagination_item + ' ' + (page === 4 ? styles.pagination_item_active : '')}
                         onClick={() => setPage(4)}
                     />
+                    <button
+                        data-title = {language === "rus" ? "5. Майнинг" : "5. Mining"}
+                        className={styles.pagination_item + ' ' + (page === 5 ? styles.pagination_item_active : '')}
+                        onClick={() => setPage(5)}
+                    />
                 </div>
             }
             {page === 0 &&

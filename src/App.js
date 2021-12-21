@@ -8,6 +8,7 @@ import Page1 from "./pages/Page1/index";
 import Page2 from "./pages/Page2/index";
 import Page3 from "./pages/Page3/index";
 import Page4 from "./pages/Page4/index";
+import Page5 from "./pages/Page5/index";
 
 function App() {
   const page = useSelector(state => state.page);
@@ -29,6 +30,9 @@ function App() {
             }
             {page === 4 &&
                 <Page4 />
+            }
+            {page === 5 &&
+                <Page5 />
             }
         </div>
         <Menu />
