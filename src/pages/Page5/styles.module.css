@@ -1,0 +1,21 @@
+.answers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.answer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.3rem;
+}
+.answer:last-child{
+    padding-bottom: 1rem;
+}
+
+.radio {
+	margin-right: 0.5rem;
+}

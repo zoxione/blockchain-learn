@@ -4,6 +4,27 @@ import useSound from 'use-sound';
 
 import styles from './styles.module.css';
 
+function ButtonPage(props) {
+    const dispatch = useDispatch();
+    const page = useSelector(state => state.page);
+    const language = useSelector(state => state.language);
+
+    const [playSelect] = useSound(process.env.PUBLIC_URL + '/sound/select.mp3', { volume: 0.25 });
+
+    const setPage = (_page) => {
+        dispatch({ type: "SET_PAGE", payload: _page });
+        playSelect();
+    }
+
+    return (
+        <button
+            data-title={language === "rus" ? props.titleRU : props.titleENG}
+            className={styles.pagination_item + ' ' + (page === props.page ? styles.pagination_item_active : '')}
+            onClick={() => setPage(props.page)}
+        />
+    )
+}
+
 function Menu() {
     const dispatch = useDispatch();
     const page = useSelector(state => state.page);
@@ -12,27 +33,21 @@ function Menu() {
 
     const [play, { pause }] = useSound(process.env.PUBLIC_URL + '/sound/background.mp3', { loop: true, volume: 0.25 });
     const [playSwitch] = useSound(process.env.PUBLIC_URL + '/sound/switch.mp3', { volume: 0.25 });
-    const [playSelect] = useSound(process.env.PUBLIC_URL + '/sound/select.mp3', { volume: 0.25 });
-
-    const setPage = (_page) => {
-        dispatch({type: "SET_PAGE", payload: _page});
-        playSelect();
-    }
 
     const toggleLanguage = () => {
-        dispatch({type: "TOGGLE_LANGUAGE"});
+        dispatch({ type: "TOGGLE_LANGUAGE" });
         playSwitch();
     }
 
     const toggleSound = () => {
-        dispatch({type: "TOGGLE_SOUND"});
+        dispatch({ type: "TOGGLE_SOUND" });
         playSwitch();
         if (!isSound) {
             play();
         }
         else {
             pause();
-        }     
+        }
     }
 
     return (
@@ -55,31 +70,12 @@ function Menu() {
             </button>
             {page !== 0 &&
                 <div className={styles.pagination}>
-                    <button 
-                        data-title = {language === "rus" ? "1. Блокчейн" : "1. Blockchain"}
-                        className={styles.pagination_item + ' ' + (page === 1 ? styles.pagination_item_active : '')}
-                        onClick={() => setPage(1)}
-                    />
-                    <button
-                        data-title = {language === "rus" ? "2. Блок" : "2. Block"}
-                        className={styles.pagination_item + ' ' + (page === 2 ? styles.pagination_item_active : '')}
-                        onClick={() => setPage(2)}
-                    />
-                    <button
-                        data-title = {language === "rus" ? "3. Безопасность" : "3. Security"}
-                        className={styles.pagination_item + ' ' + (page === 3 ? styles.pagination_item_active : '')}
-                        onClick={() => setPage(3)}
-                    />
-                    <button
-                        data-title = {language === "rus" ? "4. Смарт-контракты" : "4. Smart-contracts"}
-                        className={styles.pagination_item + ' ' + (page === 4 ? styles.pagination_item_active : '')}
-                        onClick={() => setPage(4)}
-                    />
-                    <button
-                        data-title = {language === "rus" ? "5. Майнинг" : "5. Mining"}
-                        className={styles.pagination_item + ' ' + (page === 5 ? styles.pagination_item_active : '')}
-                        onClick={() => setPage(5)}
-                    />
+                    <ButtonPage page={1} titleRU="1. Блокчейн" titleENG="1. Blockchain" />
+                    <ButtonPage page={2} titleRU="2. Блок" titleENG="2. Block" />
+                    <ButtonPage page={3} titleRU="3. Безопасность" titleENG="3. Security" />
+                    <ButtonPage page={4} titleRU="4. Смарт-контракты" titleENG="4. Smart-contracts" />
+                    <ButtonPage page={5} titleRU="5. Проверка знаний" titleENG="5. Knowledge check" />
+                    <ButtonPage page={6} titleRU="6. Майнинг" titleENG="6. Mining" />
                 </div>
             }
             {page === 0 &&
