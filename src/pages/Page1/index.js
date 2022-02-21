@@ -28,15 +28,15 @@ function Page1() {
         <Page>
             <h2>{text.title}</h2>
             <p>{text.description[0]}</p>
-            <div className = {styles.blockchain}>
+            <div className={styles.blockchain}>
                 <Canvas
                     pannable={false}
                     readonly={true}
                     direction="RIGHT"
                     nodes={[
-                        { id: '1', text: 'Block 1', width: width/16 },
-                        { id: '2', text: 'Block 2', width: width/16 },
-                        { id: '3', text: 'Block 3', width: width/16 }
+                        { id: '1', text: 'Block 1', width: width / 16 },
+                        { id: '2', text: 'Block 2', width: width / 16 },
+                        { id: '3', text: 'Block 3', width: width / 16 }
                     ]}
                     edges={[
                         { id: '1-2', from: '1', to: '2', className: styles.AAA },
@@ -45,8 +45,8 @@ function Page1() {
                     node={(node: NodeProps) => (
                         <Node
                             {...node}
-                            style={{ 
-                                fill: node.properties.id === '1' ? '#2563EB' : node.properties.id === '2' ? '#059669' : '#DC2626' 
+                            style={{
+                                fill: node.properties.id === '1' ? '#2563EB' : node.properties.id === '2' ? '#059669' : '#DC2626'
                             }}
                         />
                     )}

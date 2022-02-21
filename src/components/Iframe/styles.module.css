@@ -1,6 +1,37 @@
 .iframe {
-    border: none;
-    height: 70vh;
-    width: 40vw;
+    width: 1600px;
+    height: 800px;
+    transform: scale(0.3);
+    border: 0;
+}
+
+@media screen and (min-width: 640px) {
+    .iframe {
+        transform: scale(0.4);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .iframe {
+        transform: scale(0.5);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .iframe {
+
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .iframe {
+        
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .iframe {
+        transform: scale(0.8);
+    }
 }
 
