@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from "react-redux";
+import { VscDebugRestart } from "react-icons/vsc"
 
 import Page from "../../components/Page/index";
 import ButtonNextPage from "../../components/ButtonNextPage/index";
@@ -94,11 +95,11 @@ function Page6() {
                     />
                     <button onClick={() => checkResult()} className={styles.btn_check}>Проверить результат</button>
                 </div>
-                : <div>
+                : <div className={styles.block_result}>
                     <p>Результат теста: {countTrue} верных</p>
-                    <div className={styles.block_result}>
-                        <button onClick={() => againTest()} className={styles.btn_again}>Начать заново</button>
+                    <div className={styles.content}>
                         <ButtonNextPage>{text.button}</ButtonNextPage>
+                        <button onClick={() => againTest()} className={styles.btn_again}><VscDebugRestart /></button>
                     </div>
                 </div>
             }

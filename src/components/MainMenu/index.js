@@ -38,6 +38,16 @@ function MainMenu() {
     const [playSwitch] = useSound(process.env.PUBLIC_URL + '/sound/switch.mp3', { volume: 0.25 });
     const [playSelect] = useSound(process.env.PUBLIC_URL + '/sound/select.mp3', { volume: 0.25 });
 
+    const pages = [
+        { id: 1, titleRU: "1. Блокчейн", titleENG: "1. Blockchain" },
+        { id: 2, titleRU: "2. Блок", titleENG: "2. Block" },
+        { id: 3, titleRU: "3. Безопасность", titleENG: "3. Security" },
+        { id: 4, titleRU: "4. Смарт-контракты", titleENG: "4. Smart-contracts" },
+        { id: 5, titleRU: "5. Проверка знаний", titleENG: "5. Knowledge check" },
+        { id: 6, titleRU: "6. Майнинг", titleENG: "6. Mining" },
+        { id: 9, titleRU: "9. Заключение", titleENG: "9. Conclusion" },
+    ];
+
     const toggleLanguage = () => {
         dispatch({ type: "TOGGLE_LANGUAGE" });
         playSwitch();
@@ -81,12 +91,14 @@ function MainMenu() {
                 {page !== 0 &&
                     <Menu trigger="hover" delay={100} className={styles.min_menu}>
                         <Menu.Label align="left">Menu</Menu.Label>
-                        <Menu.Item onClick={() => setPage(1)}>1. Блокчейн</Menu.Item>
-                        <Menu.Item onClick={() => setPage(2)}>2. Блок</Menu.Item>
-                        <Menu.Item onClick={() => setPage(3)}>3. Безопасность</Menu.Item>
-                        <Menu.Item onClick={() => setPage(4)}>4. Смарт-контракты</Menu.Item>
-                        <Menu.Item onClick={() => setPage(5)}>5. Проверка знаний</Menu.Item>
-                        <Menu.Item onClick={() => setPage(6)}>6. Майнинг</Menu.Item>
+                        {pages.map((page, i) => {
+                            return (
+                                <Menu.Item onClick={() => setPage(page.id)}>
+                                    {language === "rus" && page.titleRU}
+                                    {language === "eng" && page.titleENG}
+                                </Menu.Item>
+                            )
+                        })}
                     </Menu>
                 }
                 {page === 0 &&
@@ -125,12 +137,11 @@ function MainMenu() {
                 </button>
                 {page !== 0 &&
                     <div className={styles.pagination}>
-                        <ButtonPage page={1} titleRU="1. Блокчейн" titleENG="1. Blockchain" />
-                        <ButtonPage page={2} titleRU="2. Блок" titleENG="2. Block" />
-                        <ButtonPage page={3} titleRU="3. Безопасность" titleENG="3. Security" />
-                        <ButtonPage page={4} titleRU="4. Смарт-контракты" titleENG="4. Smart-contracts" />
-                        <ButtonPage page={5} titleRU="5. Проверка знаний" titleENG="5. Knowledge check" />
-                        <ButtonPage page={6} titleRU="6. Майнинг" titleENG="6. Mining" />
+                        {pages.map((page, i) => {
+                            return (
+                                <ButtonPage page={page.id} titleRU={page.titleRU} titleENG={page.titleENG} />
+                            )
+                        })}
                     </div>
                 }
                 {page === 0 &&
