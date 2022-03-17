@@ -1,19 +1,19 @@
 .iframe {
     width: 1600px;
     height: 800px;
-    transform: scale(0.3);
+    transform: scale(0.8);
     border: 0;
 }
 
 @media screen and (min-width: 640px) {
     .iframe {
-        transform: scale(0.4);
+        
     }
 }
 
 @media screen and (min-width: 768px) {
     .iframe {
-        transform: scale(0.5);
+        
     }
 }
 
@@ -31,7 +31,7 @@
 
 @media screen and (min-width: 1536px) {
     .iframe {
-        transform: scale(0.8);
+
     }
 }
 

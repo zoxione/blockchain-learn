@@ -95,3 +95,13 @@
 .pagination_item:hover {
     background-color: white;
 }
+
+.min_menu {
+    margin-right: 30px;
+}
+.min_menu button {
+    color: white;
+}
+.min_menu button:hover {
+    color: rgba(34, 40, 49, 0.9);
+}

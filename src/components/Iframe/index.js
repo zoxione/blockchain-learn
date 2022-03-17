@@ -1,4 +1,5 @@
 import React from 'react';
+import { AspectRatio } from '@mantine/core';
 
 import styles from './styles.module.css';
 

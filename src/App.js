@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 import styles from './App.module.css';
-import Menu from "./components/Menu";
+import MainMenu from "./components/Menu";
 import Page0 from "./pages/Page0";
 import Page1 from "./pages/Page1";
 import Page2 from "./pages/Page2";
@@ -39,7 +39,7 @@ function App() {
                     <Page6 />
                 }
             </div>
-            <Menu />
+            <MainMenu />
         </div>
     )
 }
