@@ -11,3 +11,12 @@
         width: 300px;
     }
 }
+
+.btn_question {
+    color: #222831;
+}
+
+.btn_question:hover {
+    background-color: transparent;
+    color: #5a5e63;
+}

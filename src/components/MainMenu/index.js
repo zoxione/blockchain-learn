@@ -43,9 +43,9 @@ function MainMenu() {
         { id: 2, titleRU: "2. Блок", titleENG: "2. Block" },
         { id: 3, titleRU: "3. Безопасность", titleENG: "3. Security" },
         { id: 4, titleRU: "4. Смарт-контракты", titleENG: "4. Smart-contracts" },
-        { id: 5, titleRU: "5. Проверка знаний", titleENG: "5. Knowledge check" },
-        { id: 6, titleRU: "6. Майнинг", titleENG: "6. Mining" },
-        { id: 9, titleRU: "9. Заключение", titleENG: "9. Conclusion" },
+        { id: 5, titleRU: "5. Майнинг", titleENG: "5. Mining" },
+        { id: 6, titleRU: "6. Игра", titleENG: "6. Game" },
+        { id: 9, titleRU: "9. Проверка знаний", titleENG: "9. Knowledge check" },
     ];
 
     const toggleLanguage = () => {

@@ -1,5 +1,8 @@
 import { useSelector } from "react-redux";
 import { Canvas, Node } from 'reaflow';
+import { useState } from 'react';
+import { Button, Collapse } from '@mantine/core';
+import { AiOutlineQuestionCircle } from 'react-icons/ai'
 
 import styles from './styles.module.css';
 import Page from "../../components/Page/index";
@@ -10,6 +13,8 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 function Page1() {
     const language = useSelector(state => state.language);
     const { width } = useWindowDimensions();
+
+    const [opened, setOpen] = useState(false);
 
     var text;
     switch (language) {
@@ -74,7 +79,16 @@ function Page1() {
                     />
                 }
             </div>
+
+            <Button className={styles.btn_question} variant="subtle" onClick={() => setOpen((o) => !o)}>
+                <AiOutlineQuestionCircle size={40} />
+            </Button>
+            <Collapse in={opened} style={{ fontSize: '18px' }}>
+                {text.description[2]}
+            </Collapse>
+
             <p>{text.description[1]}</p>
+
             <ButtonNextPage>{text.button}</ButtonNextPage>
         </Page>
     )

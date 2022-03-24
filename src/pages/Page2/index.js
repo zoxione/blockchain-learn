@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import { Canvas, Node } from 'reaflow';
+import { Tooltip } from '@mantine/core';
 
 import Page from "../../components/Page/index";
 import ButtonNextPage from "../../components/ButtonNextPage/index";
@@ -25,32 +26,45 @@ function Page2() {
     return (
         <Page>
             <h2>{text.title}</h2>
-            <div className = {styles.main}>
-                <div className = {styles.blockchain}>
-                    <Canvas
-                        pannable={false}
-                        readonly={true}
-                        direction="RIGHT"
-                        nodes={[
-                            { id: '1', text: 'Block', width: 90, height: 90 }
-                        ]}
-                        node={(node: NodeProps) => (
-                            <Node
-                                {...node}
-                                style={{ 
-                                    fill: '#5c02d3' 
-                                }}
-                            />
-                        )}
-                    />
-                </div>
+            <div className={styles.main}>
+                <Tooltip
+                    wrapLines
+                    width={220}
+                    withArrow
+                    transition="fade"
+                    transitionDuration={200}
+                    label="a3890eb2469875f2acd0075b57f04478026a56478b0e62523d63e4102a41c6d5"
+                >
+                    <div className={styles.blockchain}>
+                        <Canvas
+                            pannable={false}
+                            readonly={true}
+                            direction="RIGHT"
+                            nodes={[
+                                { id: '1', text: 'Block', width: 90, height: 90 }
+                            ]}
+                            node={(node: NodeProps) => (
+                                <Node
+                                    {...node}
+                                    style={{
+                                        fill: '#5c02d3'
+                                    }}
+                                />
+                            )}
+                        />
+                    </div>
+                </Tooltip>
                 <div>
                     <p>• {text.list[0]}</p>
                     <p>• {text.list[1]}</p>
                     <p>• {text.list[2]}</p>
                 </div>
             </div>
-            <p>{text.description[0]}</p>
+            {text.description.map((description, i) => {
+                return (
+                    <p>{text.description[i]}</p>
+                )
+            })}
             <ButtonNextPage>{text.button}</ButtonNextPage>
         </Page>
     )

@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 
 import Page from "../../components/Page/index";
 import ButtonNextPage from "../../components/ButtonNextPage/index";
-//import styles from './styles.module.css';
+import styles from './styles.module.css';
 import { russian_text, english_text } from './data';
 
 function Page3() {
@@ -24,8 +24,14 @@ function Page3() {
     return (
         <Page>
             <h2>{text.title}</h2>
-            <p>{text.description[0]}</p>
-            <p>{text.description[1]}</p>
+            {text.description.map((description, i) => {
+                return (
+                    <p>{text.description[i]}</p>
+                )
+            })}
+
+            <img className={styles.img} src={`${process.env.PUBLIC_URL}/img/security_blockchain.jpg`} alt="security_blockchain"></img>
+
             <ButtonNextPage>{text.button}</ButtonNextPage>
         </Page>
     )
