@@ -26,7 +26,7 @@ function Page5() {
             break;
     }
 
-    if (width < 450) {
+    if (width < 500) {
         return (
             <div className={styles.page}>
                 <h2>{text.title}</h2>

@@ -6,6 +6,7 @@
     padding: 0;
     text-align: center;
 }
+
 *:focus {
     outline: none;
 }
@@ -17,14 +18,17 @@
     align-items: center;
     justify-content: center;
     background-color: #EEEEEE;
+    overflow: hidden;
 }
 
 body::-webkit-scrollbar {
     width: 0.6em;
 }
+
 body::-webkit-scrollbar-track {
     background: #EEEEEE;
 }
+
 body::-webkit-scrollbar-thumb {
     background-color: rgba(31, 41, 55, 1);
     border-radius: 20px;
