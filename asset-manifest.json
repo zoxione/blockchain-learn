@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/blockchain-learn/static/css/main.26983194.chunk.css",
-    "main.js": "/blockchain-learn/static/js/main.b2117540.chunk.js",
-    "main.js.map": "/blockchain-learn/static/js/main.b2117540.chunk.js.map",
+    "main.js": "/blockchain-learn/static/js/main.2fabb449.chunk.js",
+    "main.js.map": "/blockchain-learn/static/js/main.2fabb449.chunk.js.map",
     "runtime-main.js": "/blockchain-learn/static/js/runtime-main.77137825.js",
     "runtime-main.js.map": "/blockchain-learn/static/js/runtime-main.77137825.js.map",
-    "static/js/2.220f64a6.chunk.js": "/blockchain-learn/static/js/2.220f64a6.chunk.js",
-    "static/js/2.220f64a6.chunk.js.map": "/blockchain-learn/static/js/2.220f64a6.chunk.js.map",
+    "static/js/2.253bb046.chunk.js": "/blockchain-learn/static/js/2.253bb046.chunk.js",
+    "static/js/2.253bb046.chunk.js.map": "/blockchain-learn/static/js/2.253bb046.chunk.js.map",
     "static/js/3.98ddfb77.chunk.js": "/blockchain-learn/static/js/3.98ddfb77.chunk.js",
     "static/js/3.98ddfb77.chunk.js.map": "/blockchain-learn/static/js/3.98ddfb77.chunk.js.map",
     "index.html": "/blockchain-learn/index.html",
     "static/css/main.26983194.chunk.css.map": "/blockchain-learn/static/css/main.26983194.chunk.css.map",
-    "static/js/2.220f64a6.chunk.js.LICENSE.txt": "/blockchain-learn/static/js/2.220f64a6.chunk.js.LICENSE.txt",
+    "static/js/2.253bb046.chunk.js.LICENSE.txt": "/blockchain-learn/static/js/2.253bb046.chunk.js.LICENSE.txt",
     "static/js/3.98ddfb77.chunk.js.LICENSE.txt": "/blockchain-learn/static/js/3.98ddfb77.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.77137825.js",
-    "static/js/2.220f64a6.chunk.js",
+    "static/js/2.253bb046.chunk.js",
     "static/css/main.26983194.chunk.css",
-    "static/js/main.b2117540.chunk.js"
+    "static/js/main.2fabb449.chunk.js"
   ]
 }
