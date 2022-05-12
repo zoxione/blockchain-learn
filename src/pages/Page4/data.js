@@ -11,8 +11,13 @@ const russian_text = {
 
 const english_text = {
     title: 'Smart-contract',
-    description: [''],
-    button: 'Clearly',
+    description: [
+        'Smart contracts are simple programs that are stored in a blockchain and can be automatically executed when certain conditions are met. This technology can be used not only in blockchain, but also in everyday things, such as storing and processing personal data, in marketing, and in computer games.',
+        'How do smart contracts work?',
+        'Smart contracts can be roughly compared to vending machines. You send digital coins to a smart contract, and it sends you what you were supposed to receive. In the real world, a smart contract can also be compared to a lawyer or a notary, but in this case the transaction process takes much longer.',
+        'Smart contracts are fully autonomous, operate without human involvement, and ensure that all obligations spelled out in them are fulfilled. They can also include penalties in case of non-compliance with the contract. Smart contracts are the technology that changes the world for the better.',
+    ],
+    button: 'Got it',
 }
 
 export { russian_text, english_text };

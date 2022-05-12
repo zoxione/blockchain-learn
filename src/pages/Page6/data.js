@@ -1,13 +1,13 @@
 const russian_text = {
-    title: 'Майнинг',
+    title: 'Игра',
     description: [''],
-    button: 'Понятно',
+    button: '',
 }
 
 const english_text = {
-    title: 'Mining',
+    title: 'Game',
     description: [''],
-    button: 'Clearly',
-} 
+    button: '',
+}
 
 export { russian_text, english_text };

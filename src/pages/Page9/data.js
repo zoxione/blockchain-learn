@@ -1,7 +1,7 @@
 const russian_text = {
     title: 'Проверка знаний',
     description: [''],
-    button: '',
+    button_result: 'Проверить результат',
     questionAnswers: [
         {
             question: 'Что такое блокчейн?',
@@ -16,13 +16,28 @@ const russian_text = {
             answers: ['для добавления новых блоков', 'для заработка криптовалют', 'не необязателен'],
         },
     ],
-
+    result: 'Результат теста'
 }
 
 const english_text = {
     title: 'Knowledge check',
     description: [''],
-    button: '',
+    button_result: 'Check the result',
+    questionAnswers: [
+        {
+            question: 'What is blockchain?',
+            answers: ['centralized system', 'decentralized system', 'system, which can be both centralized and decentralized'],
+        },
+        {
+            question: 'Which consensus does not exist?',
+            answers: ['proof of work', 'proof of stake', 'proof of server'],
+        },
+        {
+            question: 'What is blockchain mining for?',
+            answers: ['to add new blocks', 'for earning cryptocurrencies', 'not optional'],
+        },
+    ],
+    result: 'Test result'
 }
 
 export { russian_text, english_text };
